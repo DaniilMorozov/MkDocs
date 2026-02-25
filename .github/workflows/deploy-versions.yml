@@ -1,5 +1,5 @@
 # Deploy docs with mike so the version selector appears on GitHub Pages.
-# Each tag (1.0, 2.0, 2.1, 2.2) is built and pushed to gh-pages; 2.2 is set as "latest".
+# All tags in the repo are deployed automatically; the newest (by version sort) is set as "latest".
 
 name: Deploy docs (mike)
 
@@ -42,32 +42,26 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Deploy 1.0
+      - name: Deploy all tags with mike
         run: |
           . .venv/bin/activate
-          git checkout 1.0
-          mike deploy 1.0 --push --remote origin
-
-      - name: Deploy 2.0
-        run: |
-          . .venv/bin/activate
-          git checkout 2.0
-          mike deploy 2.0 --push --remote origin
-
-      - name: Deploy 2.1
-        run: |
-          . .venv/bin/activate
-          git checkout 2.1
-          mike deploy 2.1 --push --remote origin
-
-      - name: Deploy 2.2 as latest
-        run: |
-          . .venv/bin/activate
-          git checkout 2.2
-          mike deploy 2.2 latest --push --update-aliases --remote origin
-
-      - name: Set default version
-        run: |
-          . .venv/bin/activate
+          set -e
+          TAGS=$(git tag -l | sort -V)
+          if [ -z "$TAGS" ]; then
+            echo "No tags found. Push tags (e.g. git push origin --tags) to deploy versions."
+            exit 1
+          fi
+          LATEST=$(echo "$TAGS" | tail -1)
+          echo "Deploying tags (version order): $TAGS"
+          echo "Latest version (alias 'latest'): $LATEST"
+          for tag in $TAGS; do
+            echo "Deploying $tag..."
+            git checkout "$tag"
+            if [ "$tag" = "$LATEST" ]; then
+              mike deploy "$tag" latest --push --update-aliases --remote origin
+            else
+              mike deploy "$tag" --push --remote origin
+            fi
+          done
           git checkout main
           mike set-default --push latest --remote origin

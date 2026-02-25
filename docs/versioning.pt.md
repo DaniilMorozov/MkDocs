@@ -65,17 +65,17 @@ O seletor de versão **só aparece se o site foi publicado com mike**. Se apenas
 Este repositório inclui `.github/workflows/deploy-versions.yml`, que:
 
 1. É executado em cada push para `main` (ou manualmente em **Actions → Deploy docs (mike) → Run workflow**).
-2. Faz build da documentação nas tags **1.0**, **2.0**, **2.1** e **2.2** e publica com mike na branch `gh-pages`.
-3. Define **2.2** como versão predefinida (alias `latest`).
+2. **Obtém todas as tags** do repositório (`git tag -l`), ordena-as por versão e publica cada uma com mike na branch `gh-pages`. Não é preciso editar o workflow ao adicionar uma nova versão.
+3. Define a **tag mais recente** (por ordem de versão) como versão predefinida (alias `latest`).
 
 **Configuração necessária:**
 
-1. No repositório: **Settings → Pages → Build and deployment**  
+1. **Enviar as tags** para o workflow as poder publicar: `git push origin --tags`. Novas tags são usadas na próxima execução.
+2. No repositório: **Settings → Pages → Build and deployment**
    - **Source:** Deploy from a branch  
    - **Branch:** `gh-pages` / `/ (root)`  
    - Guardar.
-
-2. Fazer push do ficheiro do workflow e disparar uma execução (push para `main` ou executar o workflow manualmente). Depois de terminar, abrir `https://<user>.github.io/<repo>/` — o seletor de versão deve aparecer no cabeçalho.
+3. Fazer push do ficheiro do workflow e disparar uma execução (push para `main` ou executar o workflow manualmente). Depois de terminar, abrir `https://<user>.github.io/<repo>/` — o seletor de versão lista todas as tags publicadas.
 
 ## Publicar com mike localmente
 

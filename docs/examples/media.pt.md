@@ -17,17 +17,11 @@ Com atributos opcionais (tamanho, alinhamento) usando a extensão `attr_list`:
 Incorpore um vídeo do YouTube com um iframe. Use `youtube-nocookie.com` para mais privacidade (sem cookies até reproduzir):
 
 <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe
-    src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-    title="Vídeo de exemplo"
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=BcYSlzJYKuroXGwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## Imagem local
 
 Coloque ficheiros de imagem em `docs/assets/` (ou em qualquer pasta em `docs/`) e referencie-os:
 
-![Recurso local](assets/example.svg)
+![Recurso local](../assets/example.svg)

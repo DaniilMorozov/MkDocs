@@ -65,17 +65,17 @@ The version selector **only appears if the site was deployed with mike**. If you
 This repo includes `.github/workflows/deploy-versions.yml`, which:
 
 1. Runs on every push to `main` (or manually via **Actions → Deploy docs (mike) → Run workflow**).
-2. Builds the docs at tags **1.0**, **2.0**, **2.1**, and **2.2** and deploys them with mike to the `gh-pages` branch.
-3. Sets **2.2** as the default version (alias `latest`).
+2. **Discovers all tags** in the repo (`git tag -l`), sorts them by version, and deploys each with mike to the `gh-pages` branch. You don’t need to edit the workflow when adding a new version.
+3. Sets the **newest tag** (by version sort) as the default version (alias `latest`).
 
 **Required setup:**
 
-1. In the repo: **Settings → Pages → Build and deployment**  
+1. **Push tags** so the workflow can deploy them: `git push origin --tags`. New tags are picked up on the next run.
+2. In the repo: **Settings → Pages → Build and deployment**
    - **Source:** Deploy from a branch  
    - **Branch:** `gh-pages` / `/ (root)`  
    - Save.
-
-2. Push the workflow file and trigger a run (push to `main` or run the workflow manually). After it finishes, open `https://<user>.github.io/<repo>/` — the version selector should appear in the header.
+3. Push the workflow file and trigger a run (push to `main` or run the workflow manually). After it finishes, open `https://<user>.github.io/<repo>/` — the version selector lists all deployed tags.
 
 ## Deploy with mike locally
 
