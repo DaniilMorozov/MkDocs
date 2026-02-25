@@ -18,16 +18,13 @@ Incorpore um vídeo do YouTube com um iframe. Use `youtube-nocookie.com` para ma
 
 <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe
-    src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?rel=0"
+    src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     title="Vídeo de exemplo"
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
 </div>
-
-Para incorporar o seu vídeo, substitua o ID no URL:  
-`https://www.youtube-nocookie.com/embed/VIDEO_ID`
 
 ## Imagem local
 

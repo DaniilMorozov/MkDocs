@@ -18,16 +18,13 @@ Embed a YouTube video with an iframe. Use `youtube-nocookie.com` for better priv
 
 <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe
-    src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?rel=0"
+    src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     title="Example video"
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
 </div>
-
-To embed your own video, replace the ID in the URL:  
-`https://www.youtube-nocookie.com/embed/VIDEO_ID`
 
 ## Local image
 
