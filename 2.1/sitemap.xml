@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://username.github.io/repo/2.1/download/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://username.github.io/repo/2.1/download/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://username.github.io/repo/2.1pt/download/"/>
+    </url>
+    <url>
+        <loc>https://username.github.io/repo/2.1/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://username.github.io/repo/2.1/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://username.github.io/repo/2.1pt/"/>
+    </url>
+    <url>
+        <loc>https://username.github.io/repo/2.1/versioning/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://username.github.io/repo/2.1/versioning/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://username.github.io/repo/2.1pt/versioning/"/>
+    </url>
+    <url>
+        <loc>https://username.github.io/repo/2.1/examples/hello-world/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://username.github.io/repo/2.1/examples/hello-world/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://username.github.io/repo/2.1pt/examples/hello-world/"/>
+    </url>
+    <url>
+        <loc>https://username.github.io/repo/2.1/examples/more/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://username.github.io/repo/2.1/examples/more/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://username.github.io/repo/2.1pt/examples/more/"/>
+    </url>
+    <url>
+        <loc>https://username.github.io/repo/2.1/pt/download/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://username.github.io/repo/2.1/pt/download/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://username.github.io/repo/2.1download/"/>
+    </url>
+    <url>
+        <loc>https://username.github.io/repo/2.1/pt/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://username.github.io/repo/2.1/pt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://username.github.io/repo/2.1"/>
+    </url>
+    <url>
+        <loc>https://username.github.io/repo/2.1/pt/versioning/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://username.github.io/repo/2.1/pt/versioning/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://username.github.io/repo/2.1versioning/"/>
+    </url>
+    <url>
+        <loc>https://username.github.io/repo/2.1/pt/examples/hello-world/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://username.github.io/repo/2.1/pt/examples/hello-world/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://username.github.io/repo/2.1examples/hello-world/"/>
+    </url>
+    <url>
+        <loc>https://username.github.io/repo/2.1/pt/examples/more/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://username.github.io/repo/2.1/pt/examples/more/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://username.github.io/repo/2.1examples/more/"/>
+    </url>
+</urlset>
