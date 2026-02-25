@@ -1,5 +1,5 @@
 # Build and preview
-site/
+# site/
 .preview/
 
 # Virtual environment
