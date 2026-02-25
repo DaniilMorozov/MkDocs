@@ -1,6 +1,6 @@
 # Versionamento
 
-A documentação é versionada com [mike](https://github.com/jimporter/mike). O seletor de versão no cabeçalho permite alternar entre as versões publicadas.
+A documentação é versionada com [mike](https://github.com/jimporter/mike). Use o seletor de versão no cabeçalho para alternar entre **1.0**, **2.0** e **2.1**. O seletor de versão no cabeçalho permite alternar entre as versões publicadas.
 
 ## Pré-requisitos
 

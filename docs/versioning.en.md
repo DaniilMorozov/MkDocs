@@ -1,6 +1,6 @@
 # Versioning
 
-Documentation is versioned with [mike](https://github.com/jimporter/mike). The version selector in the header lets users switch between deployed versions.
+Documentation is versioned with [mike](https://github.com/jimporter/mike). Use the version selector in the header to switch between **1.0**, **2.0**, and **2.1**. The version selector in the header lets users switch between deployed versions.
 
 ## Prerequisites
 
