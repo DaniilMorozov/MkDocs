@@ -21,4 +21,4 @@ Descarregue a documentação num único PDF. Escolha o idioma:
 ./scripts/build-pdf-all.sh
 ```
 
-**Apenas um PDF** (ex.: para CI): execute `mkdocs build` ou `mkdocs serve`; o ficheiro fica em `site/pdf/documentation.pdf` (o conteúdo será da última build, normalmente PT).
+**Apenas um PDF:** execute `ENABLE_PDF_EXPORT=1 .venv/bin/mkdocs build` ou `mkdocs serve` com essa variável; o ficheiro fica em `site/pdf/documentation.pdf`.

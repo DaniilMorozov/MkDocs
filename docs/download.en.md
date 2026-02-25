@@ -21,4 +21,4 @@ Download the documentation as a single PDF. Choose your language:
 ./scripts/build-pdf-all.sh
 ```
 
-**Single PDF only** (e.g. for CI): run `mkdocs build` or `mkdocs serve`; the file is at `site/pdf/documentation.pdf` (content will be from the last build, usually PT).
+**Single PDF only:** run `ENABLE_PDF_EXPORT=1 .venv/bin/mkdocs build` or `mkdocs serve` with that env set; the file is at `site/pdf/documentation.pdf`.

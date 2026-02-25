@@ -54,15 +54,39 @@ mike set-default --push latest
 
 Ao executar `mkdocs serve` o mike não é usado; o seletor de versão só é preenchido após publicar com mike. Para testar o versionamento, faça build e publique pelo menos uma versão na sua branch.
 
-## Testar com tags locais
+## GitHub Pages: por que não aparece o seletor de versão
 
-Este repositório tem as tags de exemplo **1.0**, **2.0** e **2.1**. Para publicá-las com mike (ex.: na branch `gh-pages`):
+O seletor de versão **só aparece se o site foi publicado com mike**. Se apenas executar `mkdocs build` e enviar a pasta `site/` (ou usar um workflow simples de build e deploy), o GitHub Pages serve uma única versão e não existe `versions.json` — por isso o tema não mostra nada no menu.
+
+**Solução:** usar o workflow deste repositório (ver abaixo) ou executar mike localmente e fazer push da branch `gh-pages`.
+
+## Publicar com GitHub Actions (recomendado)
+
+Este repositório inclui `.github/workflows/deploy-versions.yml`, que:
+
+1. É executado em cada push para `main` (ou manualmente em **Actions → Deploy docs (mike) → Run workflow**).
+2. Faz build da documentação nas tags **1.0**, **2.0** e **2.1** e publica com mike na branch `gh-pages`.
+3. Define **2.1** como versão predefinida (alias `latest`).
+
+**Configuração necessária:**
+
+1. No repositório: **Settings → Pages → Build and deployment**  
+   - **Source:** Deploy from a branch  
+   - **Branch:** `gh-pages` / `/ (root)`  
+   - Guardar.
+
+2. Fazer push do ficheiro do workflow e disparar uma execução (push para `main` ou executar o workflow manualmente). Depois de terminar, abrir `https://<user>.github.io/<repo>/` — o seletor de versão deve aparecer no cabeçalho.
+
+## Publicar com mike localmente
+
+Este repositório tem as tags **1.0**, **2.0** e **2.1**. Para as publicar manualmente:
 
 ``` bash
-mike deploy 1.0
-mike deploy 2.0
-mike deploy 2.1 latest
-mike set-default --push latest
+pip install -r requirements.txt
+git checkout 1.0 && mike deploy 1.0 --push
+git checkout 2.0 && mike deploy 2.0 --push
+git checkout 2.1 && mike deploy 2.1 latest --push --update-aliases
+git checkout main && mike set-default --push latest
 ```
 
-Depois abra o site publicado e use o seletor de versão para alternar entre 1.0, 2.0 e 2.1.
+Depois configurar **GitHub Pages** para a branch `gh-pages` e abrir o site; o seletor de versão mostrará 1.0, 2.0 e 2.1.

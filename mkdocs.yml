@@ -62,8 +62,9 @@ plugins:
           build: true
   - search:
       lang: en
-  # PDF: always generated (requires WeasyPrint; on macOS: brew install cairo pango gdk-pixbuf)
+  # PDF: set ENABLE_PDF_EXPORT=1 to build PDF (CI leaves it unset so build succeeds without WeasyPrint)
   - to-pdf:
+      enabled_if_env: ENABLE_PDF_EXPORT
       output_path: pdf/documentation.pdf
       toc_title: Table of Contents
       toc_level: 3

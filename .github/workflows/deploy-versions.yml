@@ -1,0 +1,67 @@
+# Deploy docs with mike so the version selector appears on GitHub Pages.
+# Each tag (1.0, 2.0, 2.1) is built and pushed to gh-pages; 2.1 is set as "latest".
+
+name: Deploy docs (mike)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: deploy-versions
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: |
+          python -m venv .venv
+          . .venv/bin/activate
+          pip install -r requirements.txt
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Deploy 1.0
+        run: |
+          . .venv/bin/activate
+          git checkout 1.0
+          mike deploy 1.0 --push --remote origin
+
+      - name: Deploy 2.0
+        run: |
+          . .venv/bin/activate
+          git checkout 2.0
+          mike deploy 2.0 --push --remote origin
+
+      - name: Deploy 2.1 as latest
+        run: |
+          . .venv/bin/activate
+          git checkout 2.1
+          mike deploy 2.1 latest --push --update-aliases --remote origin
+
+      - name: Set default version
+        run: |
+          . .venv/bin/activate
+          git checkout main
+          mike set-default --push latest --remote origin
