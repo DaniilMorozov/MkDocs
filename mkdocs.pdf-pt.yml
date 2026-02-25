@@ -74,6 +74,7 @@ nav:
   - Examples:
     - Hello World: examples/hello-world.md
     - More examples: examples/more.md
+    - Media (image and video): examples/media.md
 
 markdown_extensions:
   - pymdownx.highlight:

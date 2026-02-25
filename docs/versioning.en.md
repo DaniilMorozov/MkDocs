@@ -1,6 +1,6 @@
 # Versioning
 
-Documentation is versioned with [mike](https://github.com/jimporter/mike). Use the version selector in the header to switch between **1.0**, **2.0**, and **2.1**. The version selector in the header lets users switch between deployed versions.
+Documentation is versioned with [mike](https://github.com/jimporter/mike). Use the version selector in the header to switch between **1.0**, **2.0**, **2.1**, and **2.2**. The version selector in the header lets users switch between deployed versions.
 
 ## Prerequisites
 
@@ -65,8 +65,8 @@ The version selector **only appears if the site was deployed with mike**. If you
 This repo includes `.github/workflows/deploy-versions.yml`, which:
 
 1. Runs on every push to `main` (or manually via **Actions → Deploy docs (mike) → Run workflow**).
-2. Builds the docs at tags **1.0**, **2.0**, and **2.1** and deploys them with mike to the `gh-pages` branch.
-3. Sets **2.1** as the default version (alias `latest`).
+2. Builds the docs at tags **1.0**, **2.0**, **2.1**, and **2.2** and deploys them with mike to the `gh-pages` branch.
+3. Sets **2.2** as the default version (alias `latest`).
 
 **Required setup:**
 

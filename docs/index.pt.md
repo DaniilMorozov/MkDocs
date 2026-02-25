@@ -2,7 +2,7 @@
 
 Bem-vindo à documentação do projeto.
 
-> **Versão 2.0** — Adicionado versionamento e download de PDF em vários idiomas.
+> **Versão 2.2** — Adicionados exemplos de media (imagem e vídeo).
 
 ## Começando
 

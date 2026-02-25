@@ -2,7 +2,7 @@
 
 Welcome to the project documentation.
 
-> **Version 2.0** — Added versioning and PDF download for multiple languages.
+> **Version 2.2** — Added media examples (image and video embedding).
 
 ## Getting started
 

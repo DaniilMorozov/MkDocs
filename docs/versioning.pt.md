@@ -1,6 +1,6 @@
 # Versionamento
 
-A documentação é versionada com [mike](https://github.com/jimporter/mike). Use o seletor de versão no cabeçalho para alternar entre **1.0**, **2.0** e **2.1**. O seletor de versão no cabeçalho permite alternar entre as versões publicadas.
+A documentação é versionada com [mike](https://github.com/jimporter/mike). Use o seletor de versão no cabeçalho para alternar entre **1.0**, **2.0**, **2.1** e **2.2**. O seletor de versão no cabeçalho permite alternar entre as versões publicadas.
 
 ## Pré-requisitos
 
@@ -65,8 +65,8 @@ O seletor de versão **só aparece se o site foi publicado com mike**. Se apenas
 Este repositório inclui `.github/workflows/deploy-versions.yml`, que:
 
 1. É executado em cada push para `main` (ou manualmente em **Actions → Deploy docs (mike) → Run workflow**).
-2. Faz build da documentação nas tags **1.0**, **2.0** e **2.1** e publica com mike na branch `gh-pages`.
-3. Define **2.1** como versão predefinida (alias `latest`).
+2. Faz build da documentação nas tags **1.0**, **2.0**, **2.1** e **2.2** e publica com mike na branch `gh-pages`.
+3. Define **2.2** como versão predefinida (alias `latest`).
 
 **Configuração necessária:**
 

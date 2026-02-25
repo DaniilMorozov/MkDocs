@@ -1,5 +1,5 @@
 # Deploy docs with mike so the version selector appears on GitHub Pages.
-# Each tag (1.0, 2.0, 2.1) is built and pushed to gh-pages; 2.1 is set as "latest".
+# Each tag (1.0, 2.0, 2.1, 2.2) is built and pushed to gh-pages; 2.2 is set as "latest".
 
 name: Deploy docs (mike)
 
@@ -54,11 +54,17 @@ jobs:
           git checkout 2.0
           mike deploy 2.0 --push --remote origin
 
-      - name: Deploy 2.1 as latest
+      - name: Deploy 2.1
         run: |
           . .venv/bin/activate
           git checkout 2.1
-          mike deploy 2.1 latest --push --update-aliases --remote origin
+          mike deploy 2.1 --push --remote origin
+
+      - name: Deploy 2.2 as latest
+        run: |
+          . .venv/bin/activate
+          git checkout 2.2
+          mike deploy 2.2 latest --push --update-aliases --remote origin
 
       - name: Set default version
         run: |
