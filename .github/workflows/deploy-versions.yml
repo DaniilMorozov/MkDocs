@@ -42,6 +42,12 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+      - name: Create passwords.yml for auth
+        run: |
+          echo "_global: \"${DOCS_PASSWORD:-docs}\"" > passwords.yml
+        env:
+          DOCS_PASSWORD: ${{ secrets.DOCS_PASSWORD }}
+
       - name: Deploy all tags with mike
         run: |
           . .venv/bin/activate

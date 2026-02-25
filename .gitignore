@@ -2,6 +2,9 @@
 site/
 .preview/
 
+# Auth: never commit real passwords
+passwords.yml
+
 # Virtual environment
 .venv/
 

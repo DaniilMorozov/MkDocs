@@ -69,6 +69,7 @@ extra:
 
 nav:
   - Home: index.md
+  - Authentication: authentication.md
   - Download PDF: download.md
   - Versioning: versioning.md
   - Examples:

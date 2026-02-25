@@ -48,7 +48,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
-# Plugins: i18n (en + pt), search, PDF export
+# Plugins: i18n (en + pt), search, PDF export, auth (encrypt content by password)
 plugins:
   - i18n:
       docs_structure: suffix
@@ -70,6 +70,23 @@ plugins:
       toc_level: 3
       cover_title: Documentation
       cover_subtitle: "Project documentation"
+  # Auth: protect all pages with password (passwords in passwords.yml, not in repo)
+  - encryptcontent:
+      password_file: "passwords.yml"
+      title_prefix: ""
+      summary: "This content is protected. Enter the password to view."
+      placeholder: "Password"
+      password_button_text: "Unlock"
+      decryption_failure_message: "Invalid password."
+      encryption_info_message: "Contact the administrator for access."
+      remember_keys: true
+      translations:
+        pt:
+          summary: "Este conteúdo está protegido. Introduza a palavra-passe para ver."
+          placeholder: "Palavra-passe"
+          password_button_text: "Desbloquear"
+          decryption_failure_message: "Palavra-passe inválida."
+          encryption_info_message: "Contacte o administrador para aceder."
 
 # Version selector (mike: deploy with "mike deploy VERSION [alias]")
 extra:
@@ -84,6 +101,7 @@ extra:
 # Navigation
 nav:
   - Home: index.md
+  - Authentication: authentication.md
   - Download PDF: download.md
   - Versioning: versioning.md
   - Examples:
