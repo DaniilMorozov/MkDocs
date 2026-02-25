@@ -1,0 +1,7 @@
+# Pin MkDocs to 1.x — Material for MkDocs is not compatible with MkDocs 2.0
+mkdocs>=1.6,<2
+mkdocs-material>=9.7
+mike>=2.0
+mkdocs-static-i18n>=1.0
+# PDF export (needs WeasyPrint; on macOS: brew install cairo pango gdk-pixbuf)
+mkdocs-to-pdf>=0.10

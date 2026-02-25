@@ -1,0 +1,103 @@
+# Build only Portuguese site + PDF (used by scripts/build-pdf-all.sh)
+site_name: Documentation
+site_description: Project documentation
+site_author: Author
+repo_url: https://github.com/username/repo
+edit_uri: edit/main/docs/
+repo_name: username/repo
+site_url: https://username.github.io/repo/
+
+theme:
+  name: material
+  language: pt
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
+    - content.code.select
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: pt
+          name: Português
+          build: true
+          default: true
+  - search:
+      lang: pt
+  - to-pdf:
+      output_path: pdf/documentation.pdf
+      toc_title: Índice
+      toc_level: 3
+      cover_title: Documentação
+      cover_subtitle: "Documentação do projeto"
+
+extra:
+  version:
+    provider: mike
+    default: latest
+    alias: true
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/username
+
+nav:
+  - Home: index.md
+  - Download PDF: download.md
+  - Versioning: versioning.md
+  - Examples:
+    - Hello World: examples/hello-world.md
+    - More examples: examples/more.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - toc:
+      permalink: true
+
+copyright: Copyright &copy; 2025

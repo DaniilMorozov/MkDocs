@@ -1,0 +1,118 @@
+# MkDocs Material configuration
+# https://squidfunk.github.io/mkdocs-material/setup/
+
+site_name: Documentation
+site_description: Project documentation
+site_author: Author
+
+repo_url: https://github.com/username/repo
+edit_uri: edit/main/docs/
+repo_name: username/repo
+# Required for version selector redirects when using mike (set for your deployment)
+site_url: https://username.github.io/repo/
+
+# Material theme
+theme:
+  name: material
+  language: en
+  palette:
+    # Light theme (default Material teal — most popular)
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark theme
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+    - content.code.annotate   # attach notes to code via # (1)! in comments
+    - content.code.select     # button to select line ranges for sharing
+  icon:
+    repo: fontawesome/brands/github
+
+# Plugins: i18n (en + pt), search, PDF export
+plugins:
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          name: English
+          build: true
+          default: true
+        - locale: pt
+          name: Português
+          build: true
+  - search:
+      lang: en
+  # PDF: always generated (requires WeasyPrint; on macOS: brew install cairo pango gdk-pixbuf)
+  - to-pdf:
+      output_path: pdf/documentation.pdf
+      toc_title: Table of Contents
+      toc_level: 3
+      cover_title: Documentation
+      cover_subtitle: "Project documentation"
+
+# Version selector (mike: deploy with "mike deploy VERSION [alias]")
+extra:
+  version:
+    provider: mike
+    default: latest
+    alias: true
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/username
+
+# Navigation
+nav:
+  - Home: index.md
+  - Download PDF: download.md
+  - Versioning: versioning.md
+  - Examples:
+    - Hello World: examples/hello-world.md
+    - More examples: examples/more.md
+
+# Markdown extensions (improved syntax highlighting + annotations)
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - toc:
+      permalink: true
+
+copyright: Copyright &copy; 2026
