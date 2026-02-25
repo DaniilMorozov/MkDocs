@@ -2,6 +2,8 @@
 
 Welcome to the project documentation.
 
+> **Version 2.0** — Added versioning and PDF download for multiple languages.
+
 ## Getting started
 
 Add sections and pages as needed. Navigation is configured in `mkdocs.yml` under the `nav` section.
