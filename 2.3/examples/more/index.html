@@ -1,0 +1,817 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Project documentation">
+      
+      
+        <meta name="author" content="Author">
+      
+      
+        <link rel="canonical" href="https://daniilmorozov.github.io/MkDocs/2.3/examples/more/">
+      
+      
+        <link rel="prev" href="../hello-world/">
+      
+      
+        <link rel="next" href="../media/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../../pt/examples/more/" hreflang="pt">
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+    
+    
+      
+        <title>More examples - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#more-examples" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              More examples
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../pt/examples/more/" hreflang="pt" class="md-select__link">
+              Português
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/DaniilMorozov/MkDocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    DaniilMorozov/MkDocs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../authentication/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Authentication
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../download/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Download PDF
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../versioning/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Versioning
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../hello-world/" class="md-tabs__link">
+          
+  
+  
+  Examples
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/DaniilMorozov/MkDocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    DaniilMorozov/MkDocs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../authentication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authentication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../download/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Download PDF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../versioning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Versioning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Examples
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Examples
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hello-world/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hello World
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    More examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media (image and video)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<div id="mkdocs-encrypted-content" style="display:none">nt/4IAztLybekCE+aX3XxQ==;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</div>
+<div id="mkdocs-decrypted-content" style="display:none">
+    <form id="mkdocs-decrypt-form" class="md-content__inner md-typeset">
+        <h1>This content is protected. Enter the password to view.</h1>
+        <p>Contact the administrator for access.</p>
+        <input class="md-input" type="password" id="mkdocs-content-password" placeholder="Password">
+        
+        <p id="mkdocs-decrypt-msg"></p>
+    </form>
+</div>
+
+<script type="text/javascript">
+var encryptcontent_id = "encryptcontent_1";
+var encryptcontent_path = "MkDocs/2.3examples/more/";
+var decryption_failure_message = "Invalid password.";
+var encryptcontent_keystore = ["q5aHW5WZ7iHFttm3LHjc/w==;U00Eukw9syA0Q6EvEZfLjH/Q0GFbwP17wITVBTXiC9nv0rzpCL2oef1xRISHAPLNfh1OLHewV+lzVijRvlPYem/FyzFvEgCvjIobh+mtcd5+30cqgjYNAe3kU7NsWWiz;jim9bDHRYEVOHHUqCbypNg=="];
+var encryptcontent_obfuscate = 0;
+
+const encryptcontent_event = new Event("encryptcontent_event");
+var encryptcontent_done = false;
+</script>
+<script type="module">
+if (!window.hasOwnProperty("init_decryptor")) {
+    import("../../assets/javascripts/decrypt-contents.js");
+} else {
+    init_decryptor();
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/username" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.code.annotate", "content.code.select"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
