@@ -53,3 +53,16 @@ mike set-default --push latest
 ## Local development
 
 Running `mkdocs serve` does not use mike; the version selector is populated only after deploying with mike. To test versioning, build and deploy at least one version to your branch.
+
+## Testing with local tags
+
+This repo has example tags **1.0**, **2.0**, and **2.1**. To deploy them with mike (e.g. to `gh-pages`):
+
+``` bash
+mike deploy 1.0
+mike deploy 2.0
+mike deploy 2.1 latest
+mike set-default --push latest
+```
+
+Then open the deployed site and use the version selector to switch between 1.0, 2.0, and 2.1.

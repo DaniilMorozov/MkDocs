@@ -53,3 +53,16 @@ mike set-default --push latest
 ## Desenvolvimento local
 
 Ao executar `mkdocs serve` o mike não é usado; o seletor de versão só é preenchido após publicar com mike. Para testar o versionamento, faça build e publique pelo menos uma versão na sua branch.
+
+## Testar com tags locais
+
+Este repositório tem as tags de exemplo **1.0**, **2.0** e **2.1**. Para publicá-las com mike (ex.: na branch `gh-pages`):
+
+``` bash
+mike deploy 1.0
+mike deploy 2.0
+mike deploy 2.1 latest
+mike set-default --push latest
+```
+
+Depois abra o site publicado e use o seletor de versão para alternar entre 1.0, 2.0 e 2.1.
