@@ -915,20 +915,17 @@
 <p>Este repositório inclui <code>.github/workflows/deploy-versions.yml</code>, que:</p>
 <ol>
 <li>É executado em cada push para <code>main</code> (ou manualmente em <strong>Actions → Deploy docs (mike) → Run workflow</strong>).</li>
-<li>Faz build da documentação nas tags <strong>1.0</strong>, <strong>2.0</strong>, <strong>2.1</strong> e <strong>2.2</strong> e publica com mike na branch <code>gh-pages</code>.</li>
-<li>Define <strong>2.2</strong> como versão predefinida (alias <code>latest</code>).</li>
+<li><strong>Obtém todas as tags</strong> do repositório (<code>git tag -l</code>), ordena-as por versão e publica cada uma com mike na branch <code>gh-pages</code>. Não é preciso editar o workflow ao adicionar uma nova versão.</li>
+<li>Define a <strong>tag mais recente</strong> (por ordem de versão) como versão predefinida (alias <code>latest</code>).</li>
 </ol>
 <p><strong>Configuração necessária:</strong></p>
 <ol>
-<li>No repositório: <strong>Settings → Pages → Build and deployment</strong>  </li>
+<li><strong>Enviar as tags</strong> para o workflow as poder publicar: <code>git push origin --tags</code>. Novas tags são usadas na próxima execução.</li>
+<li>No repositório: <strong>Settings → Pages → Build and deployment</strong></li>
 <li><strong>Source:</strong> Deploy from a branch  </li>
 <li><strong>Branch:</strong> <code>gh-pages</code> / <code>/ (root)</code>  </li>
-<li>
-<p>Guardar.</p>
-</li>
-<li>
-<p>Fazer push do ficheiro do workflow e disparar uma execução (push para <code>main</code> ou executar o workflow manualmente). Depois de terminar, abrir <code>https://&lt;user&gt;.github.io/&lt;repo&gt;/</code> — o seletor de versão deve aparecer no cabeçalho.</p>
-</li>
+<li>Guardar.</li>
+<li>Fazer push do ficheiro do workflow e disparar uma execução (push para <code>main</code> ou executar o workflow manualmente). Depois de terminar, abrir <code>https://&lt;user&gt;.github.io/&lt;repo&gt;/</code> — o seletor de versão lista todas as tags publicadas.</li>
 </ol>
 <h2 id="publicar-com-mike-localmente">Publicar com mike localmente<a class="headerlink" href="#publicar-com-mike-localmente" title="Permanent link">&para;</a></h2>
 <p>Este repositório tem as tags <strong>1.0</strong>, <strong>2.0</strong> e <strong>2.1</strong>. Para as publicar manualmente:</p>

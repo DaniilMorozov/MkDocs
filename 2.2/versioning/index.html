@@ -915,20 +915,17 @@
 <p>This repo includes <code>.github/workflows/deploy-versions.yml</code>, which:</p>
 <ol>
 <li>Runs on every push to <code>main</code> (or manually via <strong>Actions → Deploy docs (mike) → Run workflow</strong>).</li>
-<li>Builds the docs at tags <strong>1.0</strong>, <strong>2.0</strong>, <strong>2.1</strong>, and <strong>2.2</strong> and deploys them with mike to the <code>gh-pages</code> branch.</li>
-<li>Sets <strong>2.2</strong> as the default version (alias <code>latest</code>).</li>
+<li><strong>Discovers all tags</strong> in the repo (<code>git tag -l</code>), sorts them by version, and deploys each with mike to the <code>gh-pages</code> branch. You don’t need to edit the workflow when adding a new version.</li>
+<li>Sets the <strong>newest tag</strong> (by version sort) as the default version (alias <code>latest</code>).</li>
 </ol>
 <p><strong>Required setup:</strong></p>
 <ol>
-<li>In the repo: <strong>Settings → Pages → Build and deployment</strong>  </li>
+<li><strong>Push tags</strong> so the workflow can deploy them: <code>git push origin --tags</code>. New tags are picked up on the next run.</li>
+<li>In the repo: <strong>Settings → Pages → Build and deployment</strong></li>
 <li><strong>Source:</strong> Deploy from a branch  </li>
 <li><strong>Branch:</strong> <code>gh-pages</code> / <code>/ (root)</code>  </li>
-<li>
-<p>Save.</p>
-</li>
-<li>
-<p>Push the workflow file and trigger a run (push to <code>main</code> or run the workflow manually). After it finishes, open <code>https://&lt;user&gt;.github.io/&lt;repo&gt;/</code> — the version selector should appear in the header.</p>
-</li>
+<li>Save.</li>
+<li>Push the workflow file and trigger a run (push to <code>main</code> or run the workflow manually). After it finishes, open <code>https://&lt;user&gt;.github.io/&lt;repo&gt;/</code> — the version selector lists all deployed tags.</li>
 </ol>
 <h2 id="deploy-with-mike-locally">Deploy with mike locally<a class="headerlink" href="#deploy-with-mike-locally" title="Permanent link">&para;</a></h2>
 <p>This repo has tags <strong>1.0</strong>, <strong>2.0</strong>, and <strong>2.1</strong>. To deploy them yourself:</p>
