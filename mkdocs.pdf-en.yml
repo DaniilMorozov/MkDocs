@@ -2,10 +2,10 @@
 site_name: Documentation
 site_description: Project documentation
 site_author: Author
-repo_url: https://github.com/username/repo
+repo_url: https://github.com/DaniilMorozov/MkDocs
 edit_uri: edit/main/docs/
-repo_name: username/repo
-site_url: https://username.github.io/repo/
+repo_name: DaniilMorozov/MkDocs
+site_url: https://daniilmorozov.github.io/MkDocs/
 
 theme:
   name: material
