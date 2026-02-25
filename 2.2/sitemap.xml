@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://daniilmorozov.github.io/MkDocs/2.2/download/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://daniilmorozov.github.io/MkDocs/2.2/download/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://daniilmorozov.github.io/MkDocs/2.2pt/download/"/>
+    </url>
+    <url>
+        <loc>https://daniilmorozov.github.io/MkDocs/2.2/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://daniilmorozov.github.io/MkDocs/2.2/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://daniilmorozov.github.io/MkDocs/2.2pt/"/>
+    </url>
+    <url>
+        <loc>https://daniilmorozov.github.io/MkDocs/2.2/versioning/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://daniilmorozov.github.io/MkDocs/2.2/versioning/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://daniilmorozov.github.io/MkDocs/2.2pt/versioning/"/>
+    </url>
+    <url>
+        <loc>https://daniilmorozov.github.io/MkDocs/2.2/examples/hello-world/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://daniilmorozov.github.io/MkDocs/2.2/examples/hello-world/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://daniilmorozov.github.io/MkDocs/2.2pt/examples/hello-world/"/>
+    </url>
+    <url>
+        <loc>https://daniilmorozov.github.io/MkDocs/2.2/examples/media/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://daniilmorozov.github.io/MkDocs/2.2/examples/media/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://daniilmorozov.github.io/MkDocs/2.2pt/examples/media/"/>
+    </url>
+    <url>
+        <loc>https://daniilmorozov.github.io/MkDocs/2.2/examples/more/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://daniilmorozov.github.io/MkDocs/2.2/examples/more/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://daniilmorozov.github.io/MkDocs/2.2pt/examples/more/"/>
+    </url>
+    <url>
+        <loc>https://daniilmorozov.github.io/MkDocs/2.2/pt/download/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://daniilmorozov.github.io/MkDocs/2.2/pt/download/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://daniilmorozov.github.io/MkDocs/2.2download/"/>
+    </url>
+    <url>
+        <loc>https://daniilmorozov.github.io/MkDocs/2.2/pt/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://daniilmorozov.github.io/MkDocs/2.2/pt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://daniilmorozov.github.io/MkDocs/2.2"/>
+    </url>
+    <url>
+        <loc>https://daniilmorozov.github.io/MkDocs/2.2/pt/versioning/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://daniilmorozov.github.io/MkDocs/2.2/pt/versioning/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://daniilmorozov.github.io/MkDocs/2.2versioning/"/>
+    </url>
+    <url>
+        <loc>https://daniilmorozov.github.io/MkDocs/2.2/pt/examples/hello-world/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://daniilmorozov.github.io/MkDocs/2.2/pt/examples/hello-world/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://daniilmorozov.github.io/MkDocs/2.2examples/hello-world/"/>
+    </url>
+    <url>
+        <loc>https://daniilmorozov.github.io/MkDocs/2.2/pt/examples/media/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://daniilmorozov.github.io/MkDocs/2.2/pt/examples/media/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://daniilmorozov.github.io/MkDocs/2.2examples/media/"/>
+    </url>
+    <url>
+        <loc>https://daniilmorozov.github.io/MkDocs/2.2/pt/examples/more/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://daniilmorozov.github.io/MkDocs/2.2/pt/examples/more/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://daniilmorozov.github.io/MkDocs/2.2examples/more/"/>
+    </url>
+</urlset>
